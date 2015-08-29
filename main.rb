@@ -47,9 +47,15 @@ def set_player_markers
 end
 
 
+
 board_positions_array = ["0", "1", "2", "3", "4", "5", "6", "7", "8"]
 
-board("board positions", board_positions_array)
+
+board("Welcome to Tic Tic Toe. These are the board positions:", board_positions_array)
+
+current_board_array = Array.new(9, " ")
+board("This is the current board:",current_board_array)
+
 set_player_markers
 
 puts "Player 1 (#{@player1_marker}) - please choose a square between 0 and 8"
