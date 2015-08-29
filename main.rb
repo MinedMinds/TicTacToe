@@ -8,6 +8,8 @@
 #put setting of player markers in a function
 #ask Player 1 where they want to move
 #print where player 1 chooses to go
+#modify board function to take in board_arrays
+#update current_board with player choice and display updated board
 
 
 def board(message, board_array)
@@ -60,4 +62,6 @@ set_player_markers
 
 puts "Player 1 (#{@player1_marker}) - please choose a square between 0 and 8"
 move = gets.to_i
-puts "player 1 chose space #{move}"
+
+current_board_array[move] = "#{@player1_marker}"
+board("player 1 (#{@player1_marker}) chose space #{move}", current_board_array)
