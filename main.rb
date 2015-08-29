@@ -3,16 +3,21 @@
 #put in a function
 #pass a message to print
 
-puts "Current Board"
+def board(message)
 
-puts """
-   |   |   
-   |   |   
-___|___|___
-   |   |   
-   |   |   
-___|___|___
-   |   |   
-   |   |   
-   |   |   
-"""
+	puts message
+
+	puts """
+	   |   |   
+	   |   |   
+	___|___|___
+	   |   |   
+	   |   |   
+	___|___|___
+	   |   |   
+	   |   |   
+	   |   |   
+	"""
+end
+
+board("Welcome to Tic Tac Toe!")
